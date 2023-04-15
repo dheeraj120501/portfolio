@@ -4,6 +4,6 @@
 
 <main>
   <h1 class="text-3xl font-bold underline">Dheeraj's Portfolio</h1> 
-  <div>Under construction 🚧</div>
+  <div class="font-code">Under construction 🚧</div>
 </main>
 
