@@ -3,7 +3,7 @@
 </script>
 
 <main
-  class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark min-h-screen overflow-x-clip sm:px-16 sm:py-8 relative"
+  class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark min-h-screen overflow-x-clip sm:px-56 sm:py-8 relative"
 >
   <Navbar />
   <Hero />
