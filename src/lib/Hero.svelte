@@ -1,9 +1,10 @@
 <script lang="ts">
   import profile from "../assets/profile.svg";
   import Icon from "@iconify/svelte";
+  import profileData from "../data/profile.json";
 
   const contact = () => {
-    location.href = "mailto:dheerajbisht20076@gmail.com";
+    location.href = `mailto:${profileData.socials.mail}`;
   };
 </script>
 
@@ -13,13 +14,19 @@
     class="hidden text-primary-light dark:text-primary-dark sm:flex sm:flex-col sm:items-center sm:justify-end mr-16"
   >
     <div class="rounded-full cursor-pointer mb-12">
-      <Icon icon="fa:github" width="32" height="32" />
+      <a href={profileData.socials.github} target="_blank">
+        <Icon icon="fa:github" width="32" height="32" />
+      </a>
     </div>
     <div class="rounded-full cursor-pointer mb-12">
-      <Icon icon="fa:linkedin" width="32" height="32" />
+      <a href={profileData.socials.linkedin} target="_blank">
+        <Icon icon="fa:linkedin" width="32" height="32" />
+      </a>
     </div>
     <div class="rounded-full cursor-pointer mb-12">
-      <Icon icon="fa:paper-plane" width="32" height="32" />
+      <a href={"mailto:" + profileData.socials.mail} target="_blank">
+        <Icon icon="fa:paper-plane" width="32" height="32" />
+      </a>
     </div>
     <div class="w-[2px] bg-primary-light dark:bg-primary-dark h-1/3 mb-8" />
   </div>
@@ -28,8 +35,8 @@
     <div
       class="flex flex-col sm:flex-row items-center sm:justify-between sm:items-center mt-16"
     >
-      <h1 class="font-bold text-4xl sm:text-6xl leading-normal">
-        Hi, i'm <span class="stress">Dheeraj</span>
+      <h1 class="font-bold text-4xl sm:text-6xl">
+        Hi, i'm <span class="stress capitalize">{profileData.name}</span>
         <br />
         <span class="stress">web developer.</span>
       </h1>
@@ -58,7 +65,7 @@
     class="hidden text-primary-light dark:text-primary-dark sm:flex sm:flex-col sm:items-center sm:justify-end ml-16 relative"
   >
     <div class="stress -rotate-90 origin-[0] absolute top-[55%] left-0">
-      dheerajbisht20076@gmail.com
+      {profileData.socials.mail}
     </div>
     <div class="w-[2px] bg-primary-light dark:bg-primary-dark h-1/3 mb-8" />
   </div>
