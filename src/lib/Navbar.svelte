@@ -16,7 +16,7 @@
   {:else}
     <div>
       <nav
-        class="flex max-sm:flex-col max-sm:h-screen max-sm:w-screen max-sm:justify-evenly max-sm:items-center max-sm:bg-bg-light max-sm:dark:bg-bg-dark max-sm:absolute"
+        class="flex max-sm:flex-col max-sm:h-screen max-sm:w-screen max-sm:justify-evenly max-sm:items-center max-sm:bg-bg-light max-sm:dark:bg-bg-dark max-sm:absolute max-sm:z-50"
       >
         <div class="flex justify-center sm:hidden" on:click={toggleMenu}>
           <Icon icon="ci:close-lg" width="48" height="48" />
