@@ -7,3 +7,12 @@
     @apply font-body;
   }
 }
+
+.nav-border {
+  @apply relative;
+}
+
+.nav-border::before {
+  @apply absolute w-1/2 h-[2px] bg-primary-light dark:bg-primary-dark bottom-0 hover:w-full transition-all;
+  content: "";
+}

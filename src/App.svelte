@@ -1,9 +1,10 @@
 <script lang="ts">
-  
+  import { Navbar, Pending } from "./lib";
 </script>
 
-<main>
-  <h1 class="text-3xl font-bold underline">Dheeraj's Portfolio</h1> 
-  <div class="font-code">Under construction 🚧</div>
+<main
+  class="bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark min-h-screen"
+>
+  <Navbar />
+  <Pending />
 </main>
-
