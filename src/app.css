@@ -16,3 +16,7 @@
   @apply absolute w-1/2 h-[2px] bg-primary-light dark:bg-primary-dark bottom-0 hover:w-full transition-all;
   content: "";
 }
+
+.stress {
+  @apply text-primary-light dark:text-primary-dark;
+}
