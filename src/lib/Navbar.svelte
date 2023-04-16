@@ -30,7 +30,7 @@
   {/if}
 </div>
 
-<nav class="flex max-sm:hidden">
+<nav class="hidden sm:flex">
   <div class="grow" />
   {#each navItems as navItem, idx (idx)}
     <NavItem idx={"0" + String(idx + 1)} text={navItem} />

@@ -4,7 +4,19 @@
 
 @layer base {
   html {
-    @apply font-body;
+    @apply font-body scroll-smooth;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-bg-light dark:bg-bg-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-light dark:bg-primary-dark rounded-full;
   }
 }
 

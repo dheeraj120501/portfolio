@@ -1,5 +1,15 @@
 <script lang="ts">
-  import { Navbar, Pending, Hero } from "./lib";
+  import {
+    Navbar,
+    Pending,
+    Hero,
+    About,
+    Spacer,
+    Skill,
+    Portfolio,
+    Career,
+    Contact,
+  } from "./lib";
 </script>
 
 <main
@@ -7,5 +17,16 @@
 >
   <Navbar />
   <Hero />
+  <Spacer />
+  <About />
+  <Spacer />
+  <Skill />
+  <Spacer />
+  <Portfolio />
+  <Spacer />
+  <Career />
+  <Spacer />
+  <Contact />
+  <Spacer />
   <Pending />
 </main>
