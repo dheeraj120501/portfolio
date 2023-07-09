@@ -24,6 +24,22 @@ export default {
         white: "#f5f5f5",
         grey: "#a7a7a7",
       },
+      keyframes: {
+        cursor: {
+          "0%": {
+            transform: "scaleY(1)",
+          },
+          "50%": {
+            transform: "scaleY(0)",
+          },
+          "100%": {
+            transform: "scaleY(1)",
+          },
+        },
+      },
+      animation: {
+        cursor: "cursor 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
