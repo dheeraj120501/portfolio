@@ -1,6 +1,6 @@
 <script lang="ts">
-  import skills from "../assets/skills";
-  import SectionWrapper from "./SectionWrapper.svelte";
+  import skills from "../../../assets/skills";
+  import { SectionWrapper } from "../../component";
   import SkillIcon from "./SkillIcon.svelte";
 </script>
 

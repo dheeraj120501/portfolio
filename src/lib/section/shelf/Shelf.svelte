@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SectionWrapper from "./SectionWrapper.svelte";
+  import { SectionWrapper } from "../../component";
 </script>
 
 <SectionWrapper idx="06" text="my reading shelf" id="shelf">

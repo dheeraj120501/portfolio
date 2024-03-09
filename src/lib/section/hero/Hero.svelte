@@ -1,7 +1,7 @@
 <script lang="ts">
-  import profile from "../assets/profile.svg";
+  import profile from "../../../assets/profile.svg";
   import Icon from "@iconify/svelte";
-  import profileData from "../assets/data/profile.json";
+  import profileData from "../../../assets/data/profile.json";
   import Typewritter from "./Typewritter.svelte";
 
   const contact = () => {

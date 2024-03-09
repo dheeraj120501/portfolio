@@ -1,13 +1,14 @@
-import Navbar from "./Navbar.svelte";
-import Pending from "./Pending.svelte";
-import Hero from "./Hero.svelte";
-import Spacer from "./Spacer.svelte";
-import About from "./About.svelte";
-import Skill from "./Skill.svelte";
-import Portfolio from "./Portfolio.svelte";
-import Career from "./Career.svelte";
-import Contact from "./Contact.svelte";
-import Shelf from "./Shelf.svelte";
+import Navbar from "./section/navbar/Navbar.svelte";
+import { Pending, Spacer } from "./component";
+import {
+  Hero,
+  Skill,
+  Career,
+  Portfolio,
+  Contact,
+  Shelf,
+  About,
+} from "./section";
 
 export {
   Navbar,
