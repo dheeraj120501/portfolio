@@ -36,5 +36,8 @@
   "lint-staged": {
     "src/**/*": "npm run lint",
     "*": "npm run format"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.15.3"
   }
 }
