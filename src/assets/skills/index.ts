@@ -1,3 +1,5 @@
+import type { ComponentType, SvelteComponentTyped } from "svelte";
+
 import HtmlLogo from "./html5-logo.svg.svelte";
 import CssLogo from "./css3-logo.svg.svelte";
 import JsLogo from "./js-logo.svg.svelte";
@@ -19,7 +21,7 @@ import GitLogo from "./git-logo.svg.svelte";
 import NvimLogo from "./neovim-logo.svg.svelte";
 
 interface SkillInterface {
-  Logo: ConstructorOfATypedSvelteComponent;
+  Logo: ComponentType<SvelteComponentTyped>;
   isWall: boolean;
   wallColor: string;
   name: string;

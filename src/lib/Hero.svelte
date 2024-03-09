@@ -51,12 +51,12 @@
       {profileData.about}
     </div>
 
-    <div
+    <button
       class="md:px-10 py-4 text-center w-full md:w-fit text-2xl bg-primary-light dark:bg-primary-dark dark:text-black text-white rounded-lg mt-16 cursor-pointer"
       on:click={contact}
     >
       Contact me
-    </div>
+  </button>
   </div>
   <!-- Email -->
   <div

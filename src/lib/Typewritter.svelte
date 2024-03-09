@@ -1,7 +1,4 @@
 <script lang="ts">
-  import { scale } from "svelte/transition";
-  import * as easingFunctions from "svelte/easing";
-
   export let phrases: Array<String>;
   let typedPhrase = "";
   let phraseIdx = 0;
