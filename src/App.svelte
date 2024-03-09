@@ -9,7 +9,7 @@
     Portfolio,
     Career,
     Contact,
-    Shelf
+    Shelf,
   } from "./lib";
 </script>
 

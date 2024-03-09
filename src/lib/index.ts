@@ -19,5 +19,5 @@ export {
   Portfolio,
   Career,
   Contact,
-  Shelf
+  Shelf,
 };

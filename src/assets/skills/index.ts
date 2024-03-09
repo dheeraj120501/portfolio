@@ -171,5 +171,5 @@ export default [
   Kotlin,
   Docker,
   Git,
-  Nvim
+  Nvim,
 ];

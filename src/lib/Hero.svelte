@@ -6,7 +6,7 @@
 
   const contact = () => {
     location.href = profileData.socials.filter(
-      (s) => s.name === "mail"
+      (s) => s.name === "mail",
     )[0].href;
   };
 </script>
