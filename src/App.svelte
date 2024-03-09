@@ -9,6 +9,7 @@
     Portfolio,
     Career,
     Contact,
+    Shelf
   } from "./lib";
 </script>
 
@@ -29,5 +30,7 @@
     <Career />
     <Spacer />
     <Contact />
+    <Spacer />
+    <Shelf />
   </main>
 </div>

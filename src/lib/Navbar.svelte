@@ -1,7 +1,7 @@
 <script>
   import NavItem from "./NavItem.svelte";
   import Icon from "@iconify/svelte";
-  const navItems = ["about", "skills", "portfolio", "career", "contact"];
+  const navItems = ["about", "skills", "portfolio", "career", "contact", "shelf"];
   let isOpen = false;
   const toggleMenu = () => {
     isOpen = !isOpen;

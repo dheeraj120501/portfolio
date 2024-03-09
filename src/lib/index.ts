@@ -7,6 +7,7 @@ import Skill from "./Skill.svelte";
 import Portfolio from "./Portfolio.svelte";
 import Career from "./Career.svelte";
 import Contact from "./Contact.svelte";
+import Shelf from "./Shelf.svelte";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Portfolio,
   Career,
   Contact,
+  Shelf
 };
