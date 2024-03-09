@@ -13,6 +13,10 @@ import DartLogo from "./dart-logo.svg.svelte";
 import GoLogo from "./go-logo.svg.svelte";
 import PythonLogo from "./python-logo.svg.svelte";
 import CppLogo from "./cpp-logo.svg.svelte";
+import KotlinLogo from "./kotlin-logo.svg.svelte";
+import DockerLogo from "./docker-logo.svg.svelte";
+import GitLogo from "./git-logo.svg.svelte";
+import NvimLogo from "./neovim-logo.svg.svelte";
 
 interface SkillInterface {
   Logo: ConstructorOfATypedSvelteComponent;
@@ -120,6 +124,34 @@ const Cpp: SkillInterface = {
   name: "CPP logo",
 };
 
+const Kotlin: SkillInterface = {
+  Logo: KotlinLogo,
+  isWall: true,
+  wallColor: "bg-slate-100",
+  name: "Kotlin logo",
+};
+
+const Docker: SkillInterface = {
+  Logo: DockerLogo,
+  isWall: true,
+  wallColor: "bg-slate-100",
+  name: "Docker logo",
+};
+
+const Git: SkillInterface = {
+  Logo: GitLogo,
+  isWall: true,
+  wallColor: "bg-slate-100",
+  name: "Git logo",
+};
+
+const Nvim: SkillInterface = {
+  Logo: NvimLogo,
+  isWall: true,
+  wallColor: "bg-slate-100",
+  name: "Neo Vim logo",
+};
+
 export default [
   Html,
   Css,
@@ -136,4 +168,8 @@ export default [
   Go,
   Python,
   Cpp,
+  Kotlin,
+  Docker,
+  Git,
+  Nvim
 ];
