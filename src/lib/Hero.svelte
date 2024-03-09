@@ -56,7 +56,7 @@
       on:click={contact}
     >
       Contact me
-  </button>
+    </button>
   </div>
   <!-- Email -->
   <div

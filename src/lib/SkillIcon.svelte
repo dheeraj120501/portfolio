@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { ComponentType, SvelteComponentTyped } from "svelte";
 
-  export let Logo: ComponentType<SvelteComponentTyped> ;
+  export let Logo: ComponentType<SvelteComponentTyped>;
   export let isWall: boolean = true;
   export let wallColor: string;
   export let name: string;
