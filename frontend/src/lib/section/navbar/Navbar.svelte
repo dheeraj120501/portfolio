@@ -4,7 +4,7 @@
   const navItems = [
     "about",
     "skills",
-    "portfolio",
+    "work",
     "career",
     "contact",
     "shelf",

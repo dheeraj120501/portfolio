@@ -1,10 +1,10 @@
 import Navbar from "./section/navbar/Navbar.svelte";
-import { Pending, Spacer } from "./component";
+import { Pending, Spacer, Loader } from "./component";
 import {
   Hero,
   Skill,
   Career,
-  Portfolio,
+  Work,
   Contact,
   Shelf,
   About,
@@ -17,8 +17,9 @@ export {
   About,
   Spacer,
   Skill,
-  Portfolio,
+  Work,
   Career,
   Contact,
   Shelf,
+  Loader
 };

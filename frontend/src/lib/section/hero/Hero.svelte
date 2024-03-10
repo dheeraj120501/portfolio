@@ -1,14 +1,11 @@
 <script lang="ts">
-  import profile from "../../../assets/profile.svg";
   import Icon from "@iconify/svelte";
-  import profileData from "../../../assets/data/profile.json";
   import Typewritter from "./Typewritter.svelte";
+  import {urlFor} from "../../../client"
 
-  const contact = () => {
-    location.href = profileData.socials.filter(
-      (s) => s.name === "mail",
-    )[0].href;
-  };
+  export let profile
+  export let socials
+
 </script>
 
 <div class="flex">
@@ -16,14 +13,14 @@
   <div
     class="hidden text-primary-light dark:text-primary-dark md:flex md:flex-col md:items-center md:justify-end mr-16"
   >
-    {#each profileData.socials as social}
+    {#each socials as social}
       <div class="rounded-full cursor-pointer mb-12">
         <a href={social.href} target="_blank">
           <Icon icon={social.icon} width="32" height="32" />
         </a>
       </div>
     {/each}
-    <div class="w-[2px] bg-primary-light dark:bg-primary-dark h-1/3 mb-8" />
+    <div class="w-[2px] bg-primary-light dark:bg-primary-dark h-1/4 mb-6" />
   </div>
   <!-- Main Section -->
   <div class="flex flex-col items-center md:items-stretch grow px-4">
@@ -32,39 +29,33 @@
     >
       <div class="font-bold text-3xl md:text-6xl">
         <h1 class="text-center md:text-left">
-          Hi, i'm <span class="stress capitalize">{profileData.name}</span>
+          Hi, i'm <span class="stress capitalize">{profile && profile.name}</span>
         </h1>
         <div class="stress">
           <Typewritter
-            phrases={["web developer.", "app developer.", "boxer."]}
+            phrases={profile && profile.typewritter}
           />
         </div>
       </div>
       <div
-        class="w-[200px] h-[200px] rounded-full overflow-clip border-t-4 border-primary-light dark:border-primary-dark border-r-4 my-8 md:w-[400px] md:h-[400px] md:my-0"
+        class="rounded-full overflow-clip border-t-4 border-primary-light dark:border-primary-dark border-r-4 my-8 w-[200px] h-[200px] md:w-[350px] md:h-[350px] md:my-0"
       >
-        <img src={profile} alt="Profile" class="z-20 scale-125 translate-y-2" />
+        <img src={urlFor(profile.pic).url()} alt="Profile Pic" class="z-20 scale-125 translate-y-2" />
       </div>
     </div>
 
     <div class="text-xl w-[90%] text-justify md:text-3xl md:w-[60%]">
-      {profileData.about}
+      {profile.about}
     </div>
 
-    <button
-      class="md:px-10 py-4 text-center w-full md:w-fit text-2xl bg-primary-light dark:bg-primary-dark dark:text-black text-white rounded-lg mt-16 cursor-pointer"
-      on:click={contact}
-    >
-      Contact me
-    </button>
   </div>
   <!-- Email -->
   <div
     class="hidden text-primary-light dark:text-primary-dark md:flex md:flex-col md:items-center md:justify-end ml-16 relative"
   >
-    <div class="stress -rotate-90 origin-[0] absolute top-[55%] left-0 text-xl">
-      {profileData.socials.filter((s) => s.name === "mail")[0].href.slice(7)}
+    <div class="stress -rotate-90 origin-[0] absolute top-[65%] left-0 text-xl">
+      {socials.filter((s) => s.name === "mail")[0].href.slice(7)}
     </div>
-    <div class="w-[2px] bg-primary-light dark:bg-primary-dark h-1/3 mb-8" />
+    <div class="w-[2px] bg-primary-light dark:bg-primary-dark h-1/4 mb-6" />
   </div>
 </div>
